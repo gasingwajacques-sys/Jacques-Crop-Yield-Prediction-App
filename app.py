@@ -8,7 +8,7 @@ import pandas as pd
 # ================= LOAD MODEL =================
 
 load_model = pickle.load(
-    open("Crop_Yield_Model.sav","rb")
+    open("Crop_Yield_Model.pkl","rb")
 )
 
 # ================= ENCODING MAPS =================
@@ -69,7 +69,7 @@ def crop_yield_prediction(test_data):
 # ================= MAIN APP =================
 def main():
     st.title("🌾 Crop Yield Prediction Web App 🌾")
-    st.write("Developed by *GROUP 4*")
+    st.write("Developed by *GASINGWA Jacques*")
     st.write("Predict crop yield using encoded agricultural data.")
 
     show_encoding_table()
